@@ -25,6 +25,8 @@ const Title = styled.h1`
   text-align: center;
   color: red;
 `
+// 更改标签类型
+const SubTitle = Title.withComponent('div')
 
 const Content = styled.div`
   div {
@@ -62,6 +64,7 @@ class App extends React.Component {
     return (
       <Box color='red'>
         <Title>hello word</Title>
+        <SubTitle>happy</SubTitle>
         <Content>
           <InputText />
           <InputPassword />
