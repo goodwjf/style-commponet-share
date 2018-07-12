@@ -5,14 +5,14 @@ class App extends React.Component {
   render() {
     return (
       <Box color='red'>
-        <Title>hello word</Title>
-        <SubTitle>happy</SubTitle>
+        <Title>Title</Title>
+        <SubTitle>SubTitle</SubTitle>
         <Content>
-          <InputText />
-          <InputPassword />
+          <InputText placeholder='InputText'/>
+          <InputPassword placeholder='InputPassword'/>
           <ALink className='link'>Alink</ALink>
           <BLink>Blink</BLink>
-          <div>content</div>
+          <div>Content</div>
         </Content>
       </Box>
     )

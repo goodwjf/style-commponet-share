@@ -25,34 +25,36 @@ export const Title = styled.h1`
 `
 // 更改标签类型
 export const SubTitle = Title.withComponent('div')
-
 export const Content = styled.div`
   div {
-    color: blue;
+    color: coral;
   }
 `
 
 export const InputText = styled.input.attrs({ type: 'text' })`
-  color: green;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid yellowgreen;
 `
 
 export const InputPassword = styled.input.attrs({ type: 'password' })`
-  color: red;
+  margin: 5px;
+  border: 1px solid ridge;
+  padding: 5px;
 `
 
 // 第三方组件
 export const Link = ({ className, children }) => (
-  <div>
-    <a className={className} href='#'>
-      {children}
-    </a>
-  </div>
+  <a className={className} href='#'>
+    {children}
+  </a>
 )
 
 export const ALink = styled(Link).attrs({ className: 'link' })`
-  color:red;
+  color: tan;
+  display:block;
 `
 
 export const BLink = ALink.extend`
-  color: blue;
+  color: skyblue;
 `
